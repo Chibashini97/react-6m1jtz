@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
+import styles from './mystyle.module.css';
 
 class Login extends Component{
   render(){
     return(
       <div>
         <form>
-          Email : <input type = 'text' /><br/>
-          Password : <input type = 'password' /><br/>
+          <p className={styles.bigred}>Email :</p> <input type = 'text' />
+          <p className={styles.bigred}>Password :</p> <input type = 'password' />
           <center><button>Submit</button></center>
         </form>
       </div>
